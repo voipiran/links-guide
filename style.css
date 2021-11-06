@@ -1,0 +1,80 @@
+body {
+    background: rgba(37, 168, 180, 0.082) !important;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 100vh;
+    margin: auto;
+}
+
+section>div {
+    width: 50%;
+    display: flex;
+}
+
+section>div a {
+    text-decoration: none;
+    width: 50%;
+    margin: 0 10px;
+}
+
+section>div button {
+    background: rgb(42, 153, 144);
+    border: 2px solid rgb(42, 153, 144);
+    border-radius: 7px;
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    transition: 0.3s linear all;
+}
+
+section>div button:hover {
+    transition: 0.3s linear all;
+    color: rgb(15, 95, 88);
+    background: rgba(120, 221, 213, 0.65);
+    border: 2px solid rgb(42, 153, 144);
+}
+
+section>div button>svg {
+    fill: #ffffff;
+    margin: 0 10px 0 0;
+    transition: 0.3s linear all;
+}
+
+section>div button:hover>svg {
+    fill: rgb(15, 95, 88);
+    transition: 0.3s linear all;
+}
+
+@media (max-width: 992px) {
+    section {
+        width: 100%;
+    }
+    section>div button {
+        font-size: 15px;
+    }
+    section>div button>svg {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 650px) {
+    section {
+        flex-direction: column;
+    }
+    section>div {
+        width: 100%;
+        display: flex;
+        margin: 10px 0 0 0;
+    }
+}
