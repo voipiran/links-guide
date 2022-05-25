@@ -6,20 +6,30 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 75%;
+    width: 95%;
     height: 100vh;
-    margin: auto;
 }
 
 section>div {
-    width: 50%;
+    width: 100%;
     display: flex;
+    padding: 55px;
 }
 
 section>div a {
     text-decoration: none;
     width: 50%;
-    margin: 0 10px;
+    padding: 5px;
+}
+
+
+@media (max-width : 768px) {
+    section>div {        
+        flex-direction: column;
+    }
+    section>div a {
+        width: 100%;
+    }
 }
 
 section>div button {
@@ -60,9 +70,11 @@ section>div button:hover>svg {
     section {
         width: 100%;
     }
+
     section>div button {
         font-size: 15px;
     }
+
     section>div button>svg {
         transform: scale(0.8);
     }
@@ -72,9 +84,9 @@ section>div button:hover>svg {
     section {
         flex-direction: column;
     }
+
     section>div {
         width: 100%;
         display: flex;
-        margin: 10px 0 0 0;
     }
 }
